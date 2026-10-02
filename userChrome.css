@@ -1,4 +1,10 @@
-.tabbrowser-tab[pending="true"] {
+.tabbrowser-tab[pending="true"] .tab-background {
+    /* keep tab semi-transparent, but don't touch the favicon */
+    opacity: 0.5;
+}
+
+.tabbrowser-tab[pending="true"] .tab-label {
+    /* greyscale + dim the text only */
     filter: grayscale(1);
     opacity: 0.5;
 }
